@@ -60,13 +60,13 @@ Edit
   "output": "Hello CompileX!\n"
 }
 
-Testing with Postman
+### Testing with Postman
 
-Import the API endpoints into Postman
+- Import the API endpoints into Postman
 
-Send requests by providing Java code as input
+- Send requests by providing Java code as input
 
-Verify the compilation and execution output
+- Verify the compilation and execution output
 
 Example test:
 
