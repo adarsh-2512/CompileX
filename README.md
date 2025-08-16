@@ -18,7 +18,7 @@ The backend is powered by **Spring Boot**, and the frontend is built with **HTML
 ## ⚙️ Setup & Installation
 
 ### 1️⃣ Clone the Repository
-```bash
+
 git clone https://github.com/adarsh-2512/CompileX.git
 cd CompileX
 
