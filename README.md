@@ -1,36 +1,97 @@
-  # CompileX - Java Online Compiler
+# ⚡ CompileX - Online Java Compiler
 
-An **online Java compiler** built with **Spring Boot (backend)** and a responsive **HTML/CSS/JavaScript (frontend)**.  
-Users can write Java code in the browser, send it to the backend API for compilation, and view the output instantly.  
-The project was developed in **IntelliJ IDEA** and tested using **Postman API**.
-
----
-
-## 🚀 Features
-- ✅ Write and run Java code in the browser
-- ✅ Real-time output display (compilation + execution result)
-- ✅ Responsive frontend (works on mobile & desktop)
-- ✅ REST API built with Spring Boot
-- ✅ Tested with Postman for API reliability
-- ✅ Clean project structure for future expansion
+CompileX is a **web-based Java compiler and executor** that allows users to write, compile, and run Java code directly from the browser.  
+The backend is powered by **Spring Boot**, and the frontend is built with **HTML, CSS, and JavaScript**. APIs are tested with **Postman** and the backend is developed in **IntelliJ IDEA**.
 
 ---
 
-## 🛠️ Tech Stack
-**Frontend:**
-- HTML, CSS (responsive with media queries)
-- JavaScript (Fetch API to communicate with backend)
-
-**Backend:**
-- Java 24 (Spring Boot)
-- REST API for compiling and executing Java programs
-
-**Development Tools:**
-- IntelliJ IDEA (for coding and running Spring Boot backend)
-- Postman (for testing REST APIs)
-- Git & GitHub (version control)
-- Render (planned deployment platform)
+## ✨ Features
+- 🖊️ Write Java code in the browser
+- ▶️ Compile & run code with one click
+- 📜 Get instant output or error messages
+- 🔗 REST API powered by Spring Boot
+- 🧪 Tested with Postman API
+- 🌐 Ready for deployment on Render
 
 ---
 
 ## 📂 Project Structure
+CompileX/
+│── backend/ # Spring Boot project (IntelliJ)
+│ └── src/main/java/... # CompilerController and services
+│
+│── frontend/
+│ ├── index.html # Main UI
+│ ├── style.css # Styles
+│ └── script.js # Frontend logic
+│
+└── README.md # Documentation
+
+yaml
+Copy
+Edit
+
+---
+
+## ⚙️ Setup & Installation
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/adarsh-2512/CompileX.git
+cd CompileX
+2️⃣ Run Backend (Spring Boot with IntelliJ)
+Open the backend folder in IntelliJ IDEA
+
+Make sure you have JDK 24 installed
+
+Run the project using the Spring Boot main class
+
+Backend will run at:
+👉 http://localhost:8080
+
+3️⃣ Run Frontend
+Open frontend/index.html in any modern browser
+
+It will automatically call the backend APIs
+
+📡 API Endpoints (Spring Boot)
+🔹 Compile & Run Java Code
+POST /api/compile
+
+Request Body (JSON)
+json
+Copy
+Edit
+{
+  "code": "public class Main { public static void main(String[] args) { System.out.println(\"Hello CompileX!\"); } }"
+}
+Response
+json
+Copy
+Edit
+{
+  "output": "Hello CompileX!\n"
+}
+🧪 Testing with Postman
+Import the API endpoints into Postman
+
+Send requests by providing Java code as input
+
+Verify the compilation and execution output
+
+Example test:
+
+json
+Copy
+Edit
+{
+  "code": "public class Test { public static void main(String[] args) { System.out.println(\"Testing CompileX!\"); } }"
+}
+Expected response:
+
+json
+Copy
+Edit
+{
+  "output": "Testing CompileX!\n"
+}
