@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompileX Interactive</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/theme/dracula.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Top Navbar -->
+<div class="top-bar">
+    <div class="logo">CompileX</div>
+    <div class="nav-icons">
+        <button title="Save Code"><i class="fa-solid fa-floppy-disk"></i></button>
+        <button title="Download Code"><i class="fa-solid fa-download"></i></button>
+        <div class="profile-pic" title="Profile"><i class="fa-solid fa-user"></i></div>
+    </div>
+</div>
+
+<!-- Main Container -->
+<div class="container">
+
+    <!-- Code Editor -->
+    <div class="editor-container">
+        <div class="panel-header">
+            <h3>Code Editor</h3>
+            <div class="panel-controls">
+                <select id="language"><option>Java</option></select>
+                <button id="reset-btn" class="reset-btn">Reset</button>
+                <button id="run-btn" class="run-btn">Run Code</button>
+            </div>
+        </div>
+        <textarea id="code">
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World!");
+    }
+}
+</textarea>
+    </div>
+
+    <!-- Right Panel (Console + Input) -->
+    <div class="right-panel">
+        <div class="output-container">
+            <h3>Console</h3>
+            <div id="output"></div>
+        </div>
+
+        <div class="input-container">
+            <h3>Program Input</h3>
+            <textarea id="console-input" placeholder="Enter your input here..."></textarea>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/clike/clike.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
