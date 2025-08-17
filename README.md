@@ -1,4 +1,4 @@
-# ⚡ CompileX - Online Java Compiler
+# ⚡ CompileX - Online Code Compiler & Executor
 
 CompileX is a **web-based Java compiler and executor** that allows users to write, compile, and run Java code directly from the browser.  
 The backend is powered by **Spring Boot**, and the frontend is built with **HTML, CSS, and JavaScript**. APIs are tested with **Postman** and the backend is developed in **IntelliJ IDEA**.
